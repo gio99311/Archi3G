@@ -1,7 +1,7 @@
 :root{
     --color-p: #fde49f;
     --color-s: #231906;
-    --color-a: #AA225B;
+    --color-a: #fc549a;
 }
 
 .color-p{
@@ -16,6 +16,7 @@
 
 .bg-color{
     background-color: var(--color-s);
+    min-height: 70vh
     
 }
 
@@ -79,6 +80,23 @@
     z-index: 2;
     text-shadow: 2px 2px var(--color-s);
     
+}
+
+/* CATEGORIE  */
+
+.card-img-custom {
+    background: linear-gradient(transparent, var(--color-s));
+    
+}
+
+.btnIndexCustom{
+    background-color: var(--color-a);
+    padding: 8px 30px;
+    color: whitesmoke;
+    border: 1px solid --color-a;
+    border-radius: 10px;
+    text-decoration: none;
+
 }
 
 
