@@ -1,7 +1,7 @@
 :root{
-    --color-p: #F9EDCC
-    --color-s: #230C06
-    --color-a: #AA225B
+    --color-p: #fde49f;
+    --color-s: #231906;
+    --color-a: #AA225B;
 }
 
 .color-p{
@@ -28,4 +28,36 @@
     font-family: "Hubot Sans", serif;
 }
 
+/* HEADER */
+.slide1{
+    
+    background-image:linear-gradient(#231906, transparent, #231906), url(./media/sfondo1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slide2{
+    
+    background-image:linear-gradient(#231906, transparent, #231906), url(./media/sfondo2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slide3{
+    
+    background-image:linear-gradient(#231906, transparent, #231906), url(./media/sfondo3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-shadow: 2px 2px var(--color-s);
+    
+}
 
