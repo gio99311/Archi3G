@@ -1,0 +1,31 @@
+:root{
+    --color-p: #F9EDCC
+    --color-s: #230C06
+    --color-a: #AA225B
+}
+
+.color-p{
+    color: var(--color-p);
+}
+.color-s{
+    color: var(--color-s);
+}
+.color-a{
+    color: var(--color-a);
+}
+
+.bg-color{
+    background-color: var(--color-s);
+    
+}
+
+.cormorant {
+    font-family: "Cormorant Unicase", serif;
+    
+}
+
+*{
+    font-family: "Hubot Sans", serif;
+}
+
+
