@@ -28,6 +28,23 @@
     font-family: "Hubot Sans", serif;
 }
 
+/* NAVBAR */
+
+.nav-link{
+    font-size: larger;
+}
+
+.scrolledNav{
+    backdrop-filter: blur(7px);
+    border: 2px solid var(--color-p);
+    border-radius: 10px;
+    margin: 30px 30px;
+}
+
+.transition{
+    transition: 1s;
+}
+
 /* HEADER */
 .slide1{
     
@@ -35,6 +52,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
 }
 .slide2{
     
@@ -42,6 +60,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
 }
 .slide3{
     
@@ -49,6 +68,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
 }
 
 .title{
@@ -60,4 +80,6 @@
     text-shadow: 2px 2px var(--color-s);
     
 }
+
+
 
