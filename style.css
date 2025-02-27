@@ -3,6 +3,7 @@
     --color-s: #231906;
     --color-so: #23190681;
     --color-a: #fc549a;
+    --color-t: #766a53;
 }
 
 .color-p{
@@ -13,6 +14,9 @@
 }
 .color-a{
     color: var(--color-a);
+}
+.color-t{
+    color: var(--color-t);
 }
 
 .bg-color{
@@ -123,6 +127,21 @@
     padding: 20px;
     width: 250px;
     aspect-ratio: 1/0.5;
+}
+
+/* ULTIMI ARTICOLI */
+.card-custom{
+    backdrop-filter: blur(7px);
+    border: 2px solid var(--color-t);
+    border-radius: 10px;
+    padding: 20px;
+    
+}
+
+.imgCardArt{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    aspect-ratio: 1/0.7;
 }
 
 
