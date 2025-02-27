@@ -1,6 +1,7 @@
 :root{
     --color-p: #fde49f;
     --color-s: #231906;
+    --color-so: #23190681;
     --color-a: #fc549a;
 }
 
@@ -83,9 +84,8 @@
 }
 
 /* CATEGORIE  */
-
-.card-img-custom {
-    background: linear-gradient(transparent, var(--color-s));
+.card-img-custom{
+    background: var(--color-so);
     
 }
 
@@ -97,6 +97,32 @@
     border-radius: 10px;
     text-decoration: none;
 
+}
+
+/* SEZIONE NUMBERS */
+.bg-numbers{
+    background: url(./media/pexels-karolina-grabowska-7607331.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    aspect-ratio: 1/0.5;
+    padding: 0px;
+    
+}
+.subtitles{
+    font-size: 2vw;
+    text-shadow: 1px 1px 5px var(--color-p);
+
+}
+
+.boxNumbers{
+    backdrop-filter: blur(7px);
+    border: 2px solid var(--color-so);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: 250px;
+    aspect-ratio: 1/0.5;
 }
 
 
