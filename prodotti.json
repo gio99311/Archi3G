@@ -1,6 +1,6 @@
 [
-    {"name": "Pianana moderna", "category": "Living", "prezzo": 800},
-    {"name": "Letto fluttuante", "category": "Camera da Letto", "prezzo": 1550},
+    {"name": "Piantana moderna", "category": "Living", "prezzo": 800},
+    {"name": "Letto fluttuante", "category": "Camera", "prezzo": 1550},
     {"name": "Tavolo da giardino", "category": "Giardino", "prezzo": 1500},
     {"name": "Lampadario in cristallo", "category": "Living", "prezzo": 3000},
     {"name": "Amaca design", "category": "Giardino", "prezzo": 100},
@@ -9,9 +9,9 @@
     {"name": "Specchio rotondo", "category": "Bagno", "prezzo": 500},
     {"name": "Credenza moderna", "category": "Living", "prezzo": 2900},
     {"name": "Poltrona da esterno", "category": "Giardino", "prezzo": 1200},
-    {"name": "Comodino in marmo", "category": "Camera da Letto", "prezzo": 700},
+    {"name": "Comodino in marmo", "category": "Camera", "prezzo": 700},
     {"name": "Vaso in ceramica", "category": "Living", "prezzo": 150},
-    {"name": "Cassettiera in legno", "category": "Camera da Letto", "prezzo": 1100},
+    {"name": "Cassettiera in legno", "category": "Camera", "prezzo": 1100},
     {"name": "Griglia per barbecue", "category": "Giardino", "prezzo": 500},
     {"name": "Candelabro in argento", "category": "Living", "prezzo": 400},
     {"name": "Sedia Eames", "category": "Cucina", "prezzo": 900},
@@ -34,9 +34,9 @@
     {"name": "Tenda da sole", "category": "Giardino", "prezzo": 900},
     {"name": "Tavolo in legno massello", "category": "Cucina", "prezzo": 1700},
     {"name": "Libreria", "category": "Living", "prezzo": 5809},
-    {"name": "Letto con contenitore", "category": "Camera da Letto", "prezzo": 1800},
+    {"name": "Letto con contenitore", "category": "Camera", "prezzo": 1800},
     {"name": "Poltrona soft", "category": "Living", "prezzo": 200},
     {"name": "Poltrona Pouf", "category": "Living", "prezzo": 1600},
-    {"name": "Armadio in legno massello", "category": "Camera da Letto", "prezzo": 2500},
+    {"name": "Armadio in legno massello", "category": "Camera", "prezzo": 2500},
     {"name": "Sedia Colombina", "category": "Cucina", "prezzo": 500}
 ]

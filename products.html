@@ -22,7 +22,7 @@
     <!-- my css -->
     <link rel="stylesheet" href="./style.css">
   </head>
-  <body class="bg-color"> 
+  <body class="bg-color pb-5"> 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg fixed-top transition" data-bs-theme="dark">
         <div class="container-fluid">
@@ -30,7 +30,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto my-2">
+            <ul class="navbar-nav mx-auto">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
               </li>
@@ -48,18 +48,28 @@
         </div>
     </nav>
 
-    <!-- FILTRI -->
-    <section class="container-fluid mt-5">
+    <!-- FILTRI E PRODOTTI -->
+    <section class="container-fluid pt-5">
         <div class="row d-flex justify-content-center">
-            <div class="col-3">
-                <h2 class="color-p">Filtri</h2>
-            </div>
-            <div class="col-9">
+            <div class="col-12 col-lg-3">
                 <div class="row">
-                    <h2 class="color-p">Prodotti</h2>
+                    <h2 class="color-p my-4">Filtri</h2>
+                </div>
+                <div class="color-t px-2" id="btnCategories">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="allCateg" checked>
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Tutte le categorie
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-9">
+                <div class="row">
+                    <h2 class="color-p my-4">Prodotti</h2>
                 </div>
                 <div class="row" id="cardsWrapper">
-
+                    <!-- CREAZIONE CARD IN JS -->
                 </div>
             </div>
         </div>
