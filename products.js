@@ -91,6 +91,35 @@ fetch("./prodotti.json").then( (response) => response.json() ).then( (data)=> {
     } )
 
 
+    // SETTING RANGE BAR FILTRO PREZZO
+    
+    let inputPrice = document.querySelector("#inputPrice")
+    let labelPrice = document.querySelector("#labelPrice")
+
+    let prices = data.map( (product)=> product.prezzo )
+    let min = Math.min(...prices)
+    let max = Math.max(...prices)
+
+    inputPrice.min = min
+    inputPrice.max = max
+    inputPrice.value = max
+    labelPrice.innerText = `${max} $` 
+
+    
+    // FILTRO PER PREZZO
+    function filterPrice(){
+        let filtered = data.filter( (product)=> product.prezzo <= inputPrice.value)
+        createCards(filtered)
+    }
+
+    inputPrice.addEventListener("input", ()=> {
+        labelPrice.innerText = `${inputPrice.value}$`
+        filterPrice()
+    })
+
+
+
+
 
 
 
