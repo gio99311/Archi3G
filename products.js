@@ -69,7 +69,7 @@ fetch("./prodotti.json").then( (response) => response.json() ).then( (data)=> {
 
     let btnsRadio = document.querySelectorAll(".form-check-input") //mi sono catturata tutti i radio check attraverso la classe di bootstraps ma restituisce una NodeList
 
-    console.log(btnsRadio)
+    // console.log(btnsRadio)
 
     function filterCategory() {
 
@@ -117,6 +117,19 @@ fetch("./prodotti.json").then( (response) => response.json() ).then( (data)=> {
         filterPrice()
     })
 
+
+    // FILTRO PER NOME
+
+    let inputName = document.querySelector("#inputName")
+
+    function filterName() {
+        let filtered = data.filter((product)=> product.name.toLowerCase().includes(inputName.value.toLowerCase()) )
+        createCards(filtered)
+    }
+
+    inputName.addEventListener("input", ()=> {
+        filterName()
+    })
 
 
 
