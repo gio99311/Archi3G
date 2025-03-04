@@ -4,7 +4,7 @@
     --color-so: #23190681;
     --color-a: #ac426e;
     --color-t: #766a53;
-}
+    }
 
 .color-p{
     color: var(--color-p);
@@ -163,4 +163,44 @@
 
 
 
-/* FOOTER */
+/* REVIEWS */
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    max-width: 100%;
+    
+}
+
+.round-slide{
+    border-radius: 10%;
+    overflow: hidden;
+}
+
+.box-review{
+    background-color: var(--color-t);
+    border-radius: 10%;
+    border: 2px solid var(--color-t);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-review{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid var(--color-p);
+    padding: 5px;
+}
+
+
