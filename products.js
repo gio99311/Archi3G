@@ -52,7 +52,7 @@ fetch("./prodotti.json").then( (response) => response.json() ).then( (data)=> {
     let dataCategories = data.map( (product) => product.category )
     let uniqueCategories = Array.from(new Set(dataCategories) )
 
-    uniqueCategories.forEach( (category) => {
+    uniqueCategories.sort().forEach( (category) => {
         let div = document.createElement("div")
         div.classList.add("form-check")
         div.innerHTML = `
@@ -71,21 +71,21 @@ fetch("./prodotti.json").then( (response) => response.json() ).then( (data)=> {
 
     // console.log(btnsRadio)
 
-    function filterCategory() {
+    function filterCategory(array) {
 
         let nodeToArray = Array.from( btnsRadio )
         let radioChecked = nodeToArray.find( (btn) => btn.checked == true )
         if(radioChecked.id == "allCateg"){
             createCards(data)
         }else {
-            let filtered = data.filter( (product)=> product.category == radioChecked.id )
-            createCards(filtered)
+            let filtered = array.filter( (product)=> product.category == radioChecked.id )
+            return filtered
         }
     }
     
     btnsRadio.forEach( (btnsRadio)=> {
         btnsRadio.addEventListener("input", ()=> {
-            filterCategory()
+            globalFilter()
             
         })
     } )
@@ -107,14 +107,14 @@ fetch("./prodotti.json").then( (response) => response.json() ).then( (data)=> {
 
     
     // FILTRO PER PREZZO
-    function filterPrice(){
-        let filtered = data.filter( (product)=> product.prezzo <= inputPrice.value)
-        createCards(filtered)
+    function filterPrice(array){
+        let filtered = array.sort( (a, b)=> a.prezzo - b.prezzo ).filter( (product)=> product.prezzo <= inputPrice.value)
+        return filtered
     }
 
     inputPrice.addEventListener("input", ()=> {
         labelPrice.innerText = `${inputPrice.value}$`
-        filterPrice()
+        globalFilter()
     })
 
 
@@ -122,14 +122,21 @@ fetch("./prodotti.json").then( (response) => response.json() ).then( (data)=> {
 
     let inputName = document.querySelector("#inputName")
 
-    function filterName() {
-        let filtered = data.filter((product)=> product.name.toLowerCase().includes(inputName.value.toLowerCase()) )
-        createCards(filtered)
+    function filterName(array) {
+        let filtered = array.filter((product)=> product.name.toLowerCase().includes(inputName.value.toLowerCase()) )
+        return filtered
     }
 
     inputName.addEventListener("input", ()=> {
-        filterName()
+        globalFilter()
     })
+
+    function globalFilter(){
+        let filteredByCategory = filterCategory(data)
+        let filteredByPrice = filterPrice(filteredByCategory)
+        let filteredByName = filterName(filteredByPrice)
+        createCards(filteredByName)
+    }
 
 
 
