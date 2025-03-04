@@ -1,9 +1,10 @@
 :root{
     --color-p: #fde49f;
     --color-s: #231906;
-    --color-so: #23190681;
+    --color-so: #231906a3;
     --color-a: #ac426e;
     --color-t: #766a53;
+    --color-to: #766a536d;
     }
 
 .color-p{
@@ -85,48 +86,7 @@
     z-index: 2;
     text-shadow: 2px 2px var(--color-s);
     
-}
-
-/* CATEGORIE  */
-.card-img-custom{
-    background: var(--color-so);
     
-}
-
-.btnIndexCustom{
-    background-color: var(--color-a);
-    padding: 8px 30px;
-    color: whitesmoke;
-    border: 1px solid --color-a;
-    border-radius: 10px;
-    text-decoration: none;
-
-}
-
-/* SEZIONE NUMBERS */
-.bg-numbers{
-    background: url(./media/pexels-karolina-grabowska-7607331.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    aspect-ratio: 1/0.5;
-    padding: 0px;
-    
-}
-.subtitles{
-    font-size: 2vw;
-    text-shadow: 1px 1px 5px var(--color-p);
-
-}
-
-.boxNumbers{
-    backdrop-filter: blur(7px);
-    border: 2px solid var(--color-so);
-    border-radius: 10px;
-    margin: 10px;
-    padding: 20px;
-    width: 250px;
-    aspect-ratio: 1/0.5;
 }
 
 /* ULTIMI ARTICOLI */
@@ -161,7 +121,21 @@
     cursor: pointer;
 }
 
+/* CATEGORIE  */
+.card-img-custom{
+    background: var(--color-so);
+       
+}
 
+.btnIndexCustom{
+    background-color: var(--color-a);
+    padding: 8px 30px;
+    color: whitesmoke;
+    border: 1px solid --color-a;
+    border-radius: 10px;
+    text-decoration: none;
+
+}
 
 /* REVIEWS */
 
@@ -204,3 +178,52 @@
 }
 
 
+/* SEZIONE NUMBERS */
+.bg-numbers{
+    background: url(./media/pexels-karolina-grabowska-7607331.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    aspect-ratio: 1/0.5;
+    padding: 0px;
+    
+}
+.subtitles{
+    font-size: calc(15px +  2vw);
+    text-shadow: 1px 1px 5px var(--color-p);
+
+}
+
+.boxNumbers{
+    backdrop-filter: blur(7px);
+    border: 2px solid var(--color-so);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: 250px;
+    aspect-ratio: 1/0.5;
+}
+
+/* FILTRI */
+
+.box-filter{
+    background-color: var(--color-to);
+    border-radius: 10px;
+    position: sticky;
+    top: 100px;
+    left: 20px;
+}
+
+
+
+/* MEDIAQUERIES */
+
+@media screen and (max-width: 767px) {
+    .scrolledNav{
+        border: none;
+        border-bottom: 2px solid var(--color-p);
+        border-radius: 0;
+        margin: 0;
+
+    }
+}
