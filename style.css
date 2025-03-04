@@ -138,11 +138,29 @@
     
 }
 
+.card-custom:hover > div > img {
+    transform: scale(1.2);
+}
+
+.img-card-container{
+    border-radius: 10px 10px 0px 0px;
+    position: relative;
+}
+
 .imgCardArt{
+    transition: 1s;
     width: 100%;
     border-radius: 10px 10px 0px 0px;
     aspect-ratio: 1/0.7;
 }
+
+.icon-card-custom{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
 
 
 /* FOOTER */

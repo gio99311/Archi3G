@@ -63,7 +63,10 @@ products.forEach((product, i)=> {
         div.classList.add("col-12", "col-md-4", "col-lg-3", "mx-lg-1", "my-1")
         div.innerHTML = `
                         <div class="card-custom">
-                        <img class="imgCardArt" src="https://picsum.photos/20${i}" alt="">
+                        <div class="img-card-container overflow-hidden">
+                            <img class="imgCardArt" src="https://picsum.photos/200${i}" alt="">
+                            <i class="bi bi-heart color-a icon-card-custom fs-4"></i>
+                        </div>
                         <h5 class="cormorant text-center text-uppercase mt-5 fw-bold color-p">${product.name}</h5>
                         <p class="color-t fw-semibold">Categoria: ${product.category}</p>
                         <p class="color-t fw-semibold">Prezzo: <span class="color-t">${product.prezzo}$</span></p>
@@ -73,5 +76,17 @@ products.forEach((product, i)=> {
                         </div>
                         `
         cardWrapper.appendChild(div)
+
+        
     }
+    
+})
+
+let favouriteBtns = document.querySelectorAll(".icon-card-custom")
+favouriteBtns.forEach((btn)=> {
+    btn.addEventListener("click", ()=> {
+        btn.classList.toggle("bi-heart-fill")
+        btn.classList.toggle("bi-heart")
+
+    })
 })
