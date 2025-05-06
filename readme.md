@@ -25,6 +25,11 @@ Il sito si compone di due pagine principali:
 - JavaScript
 - Bootstrap 5
 
+## 🚀 Come eseguire il progetto
+
+1. Clona la repository:
+   ```bash
+   git clone https://github.com/tuo-username/Archi3G.git
 
 ## FONT
 Cormorant Unicase
