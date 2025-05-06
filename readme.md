@@ -29,7 +29,7 @@ Il sito si compone di due pagine principali:
 
 1. Clona la repository:
    ```bash
-   git clone https://github.com/tuo-username/Archi3G.git
+   git clone git@github.com:gio99311/Archi3G.git
 
 ## FONT
 Cormorant Unicase
